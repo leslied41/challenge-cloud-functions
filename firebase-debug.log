@@ -1,0 +1,338 @@
+[debug] [2022-12-07T23:24:40.848Z] ----------------------------------------------------------------------
+[debug] [2022-12-07T23:24:40.851Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start --only functions
+[debug] [2022-12-07T23:24:40.851Z] CLI Version:   11.17.0
+[debug] [2022-12-07T23:24:40.852Z] Platform:      darwin
+[debug] [2022-12-07T23:24:40.852Z] Node Version:  v16.13.0
+[debug] [2022-12-07T23:24:40.854Z] Time:          Thu Dec 08 2022 10:24:40 GMT+1100 (Australian Eastern Daylight Time)
+[debug] [2022-12-07T23:24:40.854Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-07T23:24:40.932Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-07T23:24:40.932Z] > authorizing via signed-in user (leslied41@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-12-07T23:24:41.328Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-07T23:24:41.328Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2022-12-07T23:24:41.337Z] [hub] writing locator at /var/folders/rq/t6njs5x9687ctfxjnvgzd22c0000gn/T/hub-mamamia-test.json
+[debug] [2022-12-07T23:24:41.647Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-07T23:24:41.647Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-07T23:24:41.647Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-12-07T23:24:41.660Z] defaultcredentials: writing to file /Users/drwho/.config/firebase/leslied41_gmail_com_application_default_credentials.json
+[debug] [2022-12-07T23:24:41.683Z] Setting GAC to /Users/drwho/.config/firebase/leslied41_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/drwho/.config/firebase/leslied41_gmail_com_application_default_credentials.json"}}
+[debug] [2022-12-07T23:24:41.686Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mamamia-test/adminSdkConfig [none]
+[debug] [2022-12-07T23:24:42.610Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mamamia-test/adminSdkConfig 200
+[debug] [2022-12-07T23:24:42.610Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mamamia-test/adminSdkConfig {"projectId":"mamamia-test","storageBucket":"mamamia-test.appspot.com"}
+[debug] [2022-12-07T23:24:42.644Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-12-07T23:24:42.644Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-12-07T23:24:42.644Z] Starting Emulator UI with command {"binary":"node","args":["/Users/drwho/.cache/firebase/emulators/ui-v1.11.1/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/drwho/.cache/firebase/emulators/ui-v1.11.1/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-12-07T23:24:42.805Z] Web / API server started at 127.0.0.1:4000
+Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\nWeb / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/Users/drwho/mamamia-challenge/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/drwho/mamamia-challenge/functions\" for Cloud Functions..."}}
+[debug] [2022-12-07T23:24:42.915Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-12-07T23:24:45.436Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-12-07T23:24:45.437Z] Building nodejs source
+[debug] [2022-12-07T23:24:45.437Z] Analyzing nodejs backend spec
+[debug] [2022-12-07T23:24:45.439Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-12-07T23:24:45.833Z] Serving at port 9005
+
+[debug] [2022-12-07T23:24:46.005Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-12-07T23:24:46.028Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[info] ✔  functions[us-central1-app]: http function initialized (http://127.0.0.1:5001/mamamia-test/us-central1/app). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/mamamia-test/us-central1/app)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-12-07T23:25:13.393Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-07T23:25:13.394Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-07T23:25:13.394Z] Accepted request GET /mamamia-test/us-central1/app --> us-central1-app
+[debug] [2022-12-07T23:25:13.400Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-07T23:25:13.400Z] [functions] Got req.url=/mamamia-test/us-central1/app, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mamamia-test/us-central1/app, mapping to path=/"}}
+[debug] [2022-12-07T23:25:13.413Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2022-12-07T23:25:13.416Z] [worker-pool] Adding worker with key us-central1-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=1"}}
+[debug] [2022-12-07T23:25:15.534Z] [runtime-status] [87211] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87211] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-07T23:25:15.536Z] [runtime-status] [87211] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87211] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-07T23:25:15.536Z] [runtime-status] [87211] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87211] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-12-07T23:25:15.536Z] [runtime-status] [87211] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87211] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-07T23:25:15.610Z] [runtime-status] [87211] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87211] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-12-07T23:25:15.610Z] [runtime-status] [87211] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87211] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-12-07T23:25:15.611Z] [runtime-status] [87211] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87211] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-07T23:25:15.613Z] [runtime-status] [87211] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87211] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-07T23:25:15.614Z] [runtime-status] [87211] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87211] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-07T23:25:15.614Z] [runtime-status] [87211] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87211] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-12-07T23:25:15.820Z] [runtime-status] [87211] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"mamamia-test","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCQgsGDOfWvz6eI\ngZ9/vDM+MDSTpmgLlD4t275zGeBPsYLpw3aqvRUQuqp5MkRzTVVbSbuLwjrQeKnb\nGqec0XTKHVPv33pvpbPQ6FNP+IkEM/8qHVgHPZHWZqcTUqTRQ5ezmaWRLpnyg3Is\n8vwCj+BLNMCn+sgv6dsAAaJiGynwHwLJY00E/4GLXaNngI8N1dGl6d7Zs6YiEMik\nuZgTrBPq33+NKcZK1pfaR72tRtzW+2ivsYYRnKu/65YrJUl2Ti4i8JU5dmB2Jsrt\nHlANvWpmWpRHqYEXvR2JDDWOG4ydOIr55Kjf95pL0y9lqrc7Py+I8vdYFRNEyg7l\nAk6HBOlhAgMBAAECggEAB70061fwiCqVBIq6lb7ouKEgw7KC+nHFNbQBukzNtj7h\nra613XV0WhnBFO4D++/NjS7A8D5l43G+2PjPtqaB/Gv/KYa8mhuT6nFyusLq5ZJ6\nTRFWvEaIF6UWOALySDG4P1pQY1rNTE9NT0pxBBsb7jMkSSq1S1mZDKJJxbrCL3WJ\nGHnf4ISe5Tpze9t8qwpXlWC+6SMgLLgSKy023R9aTFuLhKDmEQp5KQm33F0poh7/\nz6MSUfwrTkdYYgJ1DpnPwJxSdgz5HBfpy4A9iDH3BipttKjJbXUaJnnQMP9MBjpm\ndQawVb6nw3rwSJLzzrqsRuHLdYieef3py5RhMfJMwQKBgQDC+u2RPhDrT5uGLdiL\nitUfdv9wXhpcr25Xstr/7b+eMdjQBAeDh7OufZJgTPrXDfs19kjM7XrYVrlG5ZTd\nkzWLWmF/47tXQuFYyVz5pxY8Eaug/3EfxuG7HToNceVDF7uwUvB5WvdJdtOWfWpe\nY6sqIXigWQX3HiM+Pmhy958PEQKBgQC9vGjVelhyZQRPRprv+uovYup7xDB31Jxu\njmNqHevF0Dt8Hmky2PqZBK3b/lGs9d4DOwgLd7jFgGFcuLFd+DjLc/YyUcdHMbOO\nck8FOU2Tq8IykbBzYxb34xkiDUKhcsjAp5AtX2bLnbaxbql2NI85kf8aA1apvK2m\ngqpbw6jVUQKBgE2OKfjfyzMOEzqn+b5nlqZRWwGDLNE5JpbTmbC7DMEL6sWzFJoI\n3DvHzvVnKU9pTEcGk6aPv5FVzZSZtUD9UQsBBE8uclIfVCtQzR6wi3ORQ8diU8jj\n/t3CnljCuQKa6hkUpHpg6IPcNAVkFW8+DdNQRP7i6jCFWFdl034HaMlBAoGBAIbP\naNlNnaxiFAbTzuB2MpDKwnp/8kQiP6fZ6c8LRWt+wdU1sl9bherVRUbLU3MGGuHG\nvrePMCy8Q/FilTuEU65TTXmBW4s9SCwNEhJPHcyvvEK7+1hw7m/g3wmvzEj0SqmA\nJVPnth00iQtW6nc/bwhjsJLmDlx54BQwQSUER2CRAoGAfSZyduoZjY3dd1cxqfv2\n2/SF31V5J0GKTTqrceid5cCt1Pi5VGAqgvCfw6eNbQIUzODFELgyYvQ9tqpsztcM\nLll5lzzwpOlrubVlAvYMM5B+DPEfz+2hGZxEeho5Ivmm99/yblx+SGoJPYS32cgc\nlLqhVnfenykqQVNBVG5YHvU=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-3ue1q@mamamia-test.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87211] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"mamamia-test\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCQgsGDOfWvz6eI\\ngZ9/vDM+MDSTpmgLlD4t275zGeBPsYLpw3aqvRUQuqp5MkRzTVVbSbuLwjrQeKnb\\nGqec0XTKHVPv33pvpbPQ6FNP+IkEM/8qHVgHPZHWZqcTUqTRQ5ezmaWRLpnyg3Is\\n8vwCj+BLNMCn+sgv6dsAAaJiGynwHwLJY00E/4GLXaNngI8N1dGl6d7Zs6YiEMik\\nuZgTrBPq33+NKcZK1pfaR72tRtzW+2ivsYYRnKu/65YrJUl2Ti4i8JU5dmB2Jsrt\\nHlANvWpmWpRHqYEXvR2JDDWOG4ydOIr55Kjf95pL0y9lqrc7Py+I8vdYFRNEyg7l\\nAk6HBOlhAgMBAAECggEAB70061fwiCqVBIq6lb7ouKEgw7KC+nHFNbQBukzNtj7h\\nra613XV0WhnBFO4D++/NjS7A8D5l43G+2PjPtqaB/Gv/KYa8mhuT6nFyusLq5ZJ6\\nTRFWvEaIF6UWOALySDG4P1pQY1rNTE9NT0pxBBsb7jMkSSq1S1mZDKJJxbrCL3WJ\\nGHnf4ISe5Tpze9t8qwpXlWC+6SMgLLgSKy023R9aTFuLhKDmEQp5KQm33F0poh7/\\nz6MSUfwrTkdYYgJ1DpnPwJxSdgz5HBfpy4A9iDH3BipttKjJbXUaJnnQMP9MBjpm\\ndQawVb6nw3rwSJLzzrqsRuHLdYieef3py5RhMfJMwQKBgQDC+u2RPhDrT5uGLdiL\\nitUfdv9wXhpcr25Xstr/7b+eMdjQBAeDh7OufZJgTPrXDfs19kjM7XrYVrlG5ZTd\\nkzWLWmF/47tXQuFYyVz5pxY8Eaug/3EfxuG7HToNceVDF7uwUvB5WvdJdtOWfWpe\\nY6sqIXigWQX3HiM+Pmhy958PEQKBgQC9vGjVelhyZQRPRprv+uovYup7xDB31Jxu\\njmNqHevF0Dt8Hmky2PqZBK3b/lGs9d4DOwgLd7jFgGFcuLFd+DjLc/YyUcdHMbOO\\nck8FOU2Tq8IykbBzYxb34xkiDUKhcsjAp5AtX2bLnbaxbql2NI85kf8aA1apvK2m\\ngqpbw6jVUQKBgE2OKfjfyzMOEzqn+b5nlqZRWwGDLNE5JpbTmbC7DMEL6sWzFJoI\\n3DvHzvVnKU9pTEcGk6aPv5FVzZSZtUD9UQsBBE8uclIfVCtQzR6wi3ORQ8diU8jj\\n/t3CnljCuQKa6hkUpHpg6IPcNAVkFW8+DdNQRP7i6jCFWFdl034HaMlBAoGBAIbP\\naNlNnaxiFAbTzuB2MpDKwnp/8kQiP6fZ6c8LRWt+wdU1sl9bherVRUbLU3MGGuHG\\nvrePMCy8Q/FilTuEU65TTXmBW4s9SCwNEhJPHcyvvEK7+1hw7m/g3wmvzEj0SqmA\\nJVPnth00iQtW6nc/bwhjsJLmDlx54BQwQSUER2CRAoGAfSZyduoZjY3dd1cxqfv2\\n2/SF31V5J0GKTTqrceid5cCt1Pi5VGAqgvCfw6eNbQIUzODFELgyYvQ9tqpsztcM\\nLll5lzzwpOlrubVlAvYMM5B+DPEfz+2hGZxEeho5Ivmm99/yblx+SGoJPYS32cgc\\nlLqhVnfenykqQVNBVG5YHvU=\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-3ue1q@mamamia-test.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}}}"}}
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"The Cloud Firestore emulator is not running, so calls to Firestore will affect production."}}
+[debug] [2022-12-07T23:25:15.863Z] [runtime-status] [87211] Functions runtime initialized. {"cwd":"/Users/drwho/mamamia-challenge/functions","node_version":"16.13.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87211] Functions runtime initialized. {\"cwd\":\"/Users/drwho/mamamia-challenge/functions\",\"node_version\":\"16.13.0\"}"}}
+[debug] [2022-12-07T23:25:15.864Z] [runtime-status] [87211] Listening to port: /var/folders/rq/t6njs5x9687ctfxjnvgzd22c0000gn/T/fire_emu_da1a7a52c69bcbff.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87211] Listening to port: /var/folders/rq/t6njs5x9687ctfxjnvgzd22c0000gn/T/fire_emu_da1a7a52c69bcbff.sock"}}
+[debug] [2022-12-07T23:25:15.970Z] [worker-us-central1-app-a8c35e52-480c-4b55-9808-2b3f7e15a93c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-a8c35e52-480c-4b55-9808-2b3f7e15a93c]: IDLE"}}
+[debug] [2022-12-07T23:25:15.971Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-07T23:25:15.971Z] [worker-us-central1-app-a8c35e52-480c-4b55-9808-2b3f7e15a93c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-a8c35e52-480c-4b55-9808-2b3f7e15a93c]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-07T23:25:15.981Z] [worker-us-central1-app-a8c35e52-480c-4b55-9808-2b3f7e15a93c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-a8c35e52-480c-4b55-9808-2b3f7e15a93c]: IDLE"}}
+[debug] [2022-12-07T23:25:15.981Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 4.398316ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 4.398316ms"}}
+[debug] [2022-12-07T23:25:27.972Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-07T23:25:27.972Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-07T23:25:27.972Z] Accepted request POST /mamamia-test/us-central1/app/api/create --> us-central1-app
+[debug] [2022-12-07T23:25:27.976Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-07T23:25:27.977Z] [functions] Got req.url=/mamamia-test/us-central1/app/api/create, mapping to path=/api/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mamamia-test/us-central1/app/api/create, mapping to path=/api/create"}}
+[debug] [2022-12-07T23:25:27.977Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-07T23:25:27.977Z] [worker-us-central1-app-a8c35e52-480c-4b55-9808-2b3f7e15a93c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-a8c35e52-480c-4b55-9808-2b3f7e15a93c]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-07T23:25:30.106Z] [worker-us-central1-app-a8c35e52-480c-4b55-9808-2b3f7e15a93c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-a8c35e52-480c-4b55-9808-2b3f7e15a93c]: IDLE"}}
+[debug] [2022-12-07T23:25:30.106Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 2107.478023ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 2107.478023ms"}}
+[debug] [2022-12-07T23:25:42.386Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-07T23:25:42.386Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-07T23:25:42.387Z] Accepted request DELETE /mamamia-test/us-central1/app/api/delete/1670453419739 --> us-central1-app
+[debug] [2022-12-07T23:25:42.392Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-07T23:25:42.393Z] [functions] Got req.url=/mamamia-test/us-central1/app/api/delete/1670453419739, mapping to path=/api/delete/1670453419739 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mamamia-test/us-central1/app/api/delete/1670453419739, mapping to path=/api/delete/1670453419739"}}
+[debug] [2022-12-07T23:25:42.394Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-07T23:25:42.394Z] [worker-us-central1-app-a8c35e52-480c-4b55-9808-2b3f7e15a93c]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-a8c35e52-480c-4b55-9808-2b3f7e15a93c]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-07T23:25:42.407Z] [worker-us-central1-app-a8c35e52-480c-4b55-9808-2b3f7e15a93c]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-a8c35e52-480c-4b55-9808-2b3f7e15a93c]: IDLE"}}
+[debug] [2022-12-07T23:25:42.407Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 5.974016ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 5.974016ms"}}
+[debug] [2022-12-07T23:26:15.772Z] File /Users/drwho/mamamia-challenge/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/drwho/mamamia-challenge/functions/index.js changed, reloading triggers"}}
+[debug] [2022-12-07T23:26:16.774Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-12-07T23:26:18.858Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-12-07T23:26:18.858Z] Building nodejs source
+[debug] [2022-12-07T23:26:18.858Z] Analyzing nodejs backend spec
+[debug] [2022-12-07T23:26:18.859Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-12-07T23:26:19.243Z] Serving at port 9005
+
+[debug] [2022-12-07T23:26:19.448Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-12-07T23:26:19.460Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2022-12-07T23:26:19.473Z] [worker-pool] Shutting down IDLE worker (us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-app)"}}
+[debug] [2022-12-07T23:26:19.473Z] [worker-us-central1-app-a8c35e52-480c-4b55-9808-2b3f7e15a93c]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-a8c35e52-480c-4b55-9808-2b3f7e15a93c]: FINISHING"}}
+[debug] [2022-12-07T23:26:19.490Z] [worker-us-central1-app-a8c35e52-480c-4b55-9808-2b3f7e15a93c]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-a8c35e52-480c-4b55-9808-2b3f7e15a93c]: exited"}}
+[debug] [2022-12-07T23:26:19.491Z] [worker-us-central1-app-a8c35e52-480c-4b55-9808-2b3f7e15a93c]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-a8c35e52-480c-4b55-9808-2b3f7e15a93c]: FINISHED"}}
+[debug] [2022-12-07T23:26:20.170Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-07T23:26:20.170Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-07T23:26:20.170Z] Accepted request DELETE /mamamia-test/us-central1/app/api/delete/1670453419739 --> us-central1-app
+[debug] [2022-12-07T23:26:20.177Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-07T23:26:20.178Z] [functions] Got req.url=/mamamia-test/us-central1/app/api/delete/1670453419739, mapping to path=/api/delete/1670453419739 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mamamia-test/us-central1/app/api/delete/1670453419739, mapping to path=/api/delete/1670453419739"}}
+[debug] [2022-12-07T23:26:20.178Z] [worker-pool] Cleaned up workers for us-central1-app: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-app: 1 --> 0"}}
+[debug] [2022-12-07T23:26:20.186Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2022-12-07T23:26:20.186Z] [worker-pool] Adding worker with key us-central1-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=1"}}
+[debug] [2022-12-07T23:26:22.282Z] [runtime-status] [87269] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87269] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-07T23:26:22.283Z] [runtime-status] [87269] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87269] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-07T23:26:22.283Z] [runtime-status] [87269] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87269] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-12-07T23:26:22.284Z] [runtime-status] [87269] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87269] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-07T23:26:22.331Z] [runtime-status] [87269] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87269] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-12-07T23:26:22.331Z] [runtime-status] [87269] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87269] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-12-07T23:26:22.332Z] [runtime-status] [87269] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87269] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-07T23:26:22.333Z] [runtime-status] [87269] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87269] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-07T23:26:22.350Z] [runtime-status] [87269] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87269] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-07T23:26:22.350Z] [runtime-status] [87269] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87269] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/drwho/mamamia-challenge/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-12-07T23:26:22.439Z] [runtime-status] [87269] initializeApp(DEFAULT) {"credential":{"implicit":false,"projectId":"mamamia-test","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCQgsGDOfWvz6eI\ngZ9/vDM+MDSTpmgLlD4t275zGeBPsYLpw3aqvRUQuqp5MkRzTVVbSbuLwjrQeKnb\nGqec0XTKHVPv33pvpbPQ6FNP+IkEM/8qHVgHPZHWZqcTUqTRQ5ezmaWRLpnyg3Is\n8vwCj+BLNMCn+sgv6dsAAaJiGynwHwLJY00E/4GLXaNngI8N1dGl6d7Zs6YiEMik\nuZgTrBPq33+NKcZK1pfaR72tRtzW+2ivsYYRnKu/65YrJUl2Ti4i8JU5dmB2Jsrt\nHlANvWpmWpRHqYEXvR2JDDWOG4ydOIr55Kjf95pL0y9lqrc7Py+I8vdYFRNEyg7l\nAk6HBOlhAgMBAAECggEAB70061fwiCqVBIq6lb7ouKEgw7KC+nHFNbQBukzNtj7h\nra613XV0WhnBFO4D++/NjS7A8D5l43G+2PjPtqaB/Gv/KYa8mhuT6nFyusLq5ZJ6\nTRFWvEaIF6UWOALySDG4P1pQY1rNTE9NT0pxBBsb7jMkSSq1S1mZDKJJxbrCL3WJ\nGHnf4ISe5Tpze9t8qwpXlWC+6SMgLLgSKy023R9aTFuLhKDmEQp5KQm33F0poh7/\nz6MSUfwrTkdYYgJ1DpnPwJxSdgz5HBfpy4A9iDH3BipttKjJbXUaJnnQMP9MBjpm\ndQawVb6nw3rwSJLzzrqsRuHLdYieef3py5RhMfJMwQKBgQDC+u2RPhDrT5uGLdiL\nitUfdv9wXhpcr25Xstr/7b+eMdjQBAeDh7OufZJgTPrXDfs19kjM7XrYVrlG5ZTd\nkzWLWmF/47tXQuFYyVz5pxY8Eaug/3EfxuG7HToNceVDF7uwUvB5WvdJdtOWfWpe\nY6sqIXigWQX3HiM+Pmhy958PEQKBgQC9vGjVelhyZQRPRprv+uovYup7xDB31Jxu\njmNqHevF0Dt8Hmky2PqZBK3b/lGs9d4DOwgLd7jFgGFcuLFd+DjLc/YyUcdHMbOO\nck8FOU2Tq8IykbBzYxb34xkiDUKhcsjAp5AtX2bLnbaxbql2NI85kf8aA1apvK2m\ngqpbw6jVUQKBgE2OKfjfyzMOEzqn+b5nlqZRWwGDLNE5JpbTmbC7DMEL6sWzFJoI\n3DvHzvVnKU9pTEcGk6aPv5FVzZSZtUD9UQsBBE8uclIfVCtQzR6wi3ORQ8diU8jj\n/t3CnljCuQKa6hkUpHpg6IPcNAVkFW8+DdNQRP7i6jCFWFdl034HaMlBAoGBAIbP\naNlNnaxiFAbTzuB2MpDKwnp/8kQiP6fZ6c8LRWt+wdU1sl9bherVRUbLU3MGGuHG\nvrePMCy8Q/FilTuEU65TTXmBW4s9SCwNEhJPHcyvvEK7+1hw7m/g3wmvzEj0SqmA\nJVPnth00iQtW6nc/bwhjsJLmDlx54BQwQSUER2CRAoGAfSZyduoZjY3dd1cxqfv2\n2/SF31V5J0GKTTqrceid5cCt1Pi5VGAqgvCfw6eNbQIUzODFELgyYvQ9tqpsztcM\nLll5lzzwpOlrubVlAvYMM5B+DPEfz+2hGZxEeho5Ivmm99/yblx+SGoJPYS32cgc\nlLqhVnfenykqQVNBVG5YHvU=\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-3ue1q@mamamia-test.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87269] initializeApp(DEFAULT) {\"credential\":{\"implicit\":false,\"projectId\":\"mamamia-test\",\"privateKey\":\"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCQgsGDOfWvz6eI\\ngZ9/vDM+MDSTpmgLlD4t275zGeBPsYLpw3aqvRUQuqp5MkRzTVVbSbuLwjrQeKnb\\nGqec0XTKHVPv33pvpbPQ6FNP+IkEM/8qHVgHPZHWZqcTUqTRQ5ezmaWRLpnyg3Is\\n8vwCj+BLNMCn+sgv6dsAAaJiGynwHwLJY00E/4GLXaNngI8N1dGl6d7Zs6YiEMik\\nuZgTrBPq33+NKcZK1pfaR72tRtzW+2ivsYYRnKu/65YrJUl2Ti4i8JU5dmB2Jsrt\\nHlANvWpmWpRHqYEXvR2JDDWOG4ydOIr55Kjf95pL0y9lqrc7Py+I8vdYFRNEyg7l\\nAk6HBOlhAgMBAAECggEAB70061fwiCqVBIq6lb7ouKEgw7KC+nHFNbQBukzNtj7h\\nra613XV0WhnBFO4D++/NjS7A8D5l43G+2PjPtqaB/Gv/KYa8mhuT6nFyusLq5ZJ6\\nTRFWvEaIF6UWOALySDG4P1pQY1rNTE9NT0pxBBsb7jMkSSq1S1mZDKJJxbrCL3WJ\\nGHnf4ISe5Tpze9t8qwpXlWC+6SMgLLgSKy023R9aTFuLhKDmEQp5KQm33F0poh7/\\nz6MSUfwrTkdYYgJ1DpnPwJxSdgz5HBfpy4A9iDH3BipttKjJbXUaJnnQMP9MBjpm\\ndQawVb6nw3rwSJLzzrqsRuHLdYieef3py5RhMfJMwQKBgQDC+u2RPhDrT5uGLdiL\\nitUfdv9wXhpcr25Xstr/7b+eMdjQBAeDh7OufZJgTPrXDfs19kjM7XrYVrlG5ZTd\\nkzWLWmF/47tXQuFYyVz5pxY8Eaug/3EfxuG7HToNceVDF7uwUvB5WvdJdtOWfWpe\\nY6sqIXigWQX3HiM+Pmhy958PEQKBgQC9vGjVelhyZQRPRprv+uovYup7xDB31Jxu\\njmNqHevF0Dt8Hmky2PqZBK3b/lGs9d4DOwgLd7jFgGFcuLFd+DjLc/YyUcdHMbOO\\nck8FOU2Tq8IykbBzYxb34xkiDUKhcsjAp5AtX2bLnbaxbql2NI85kf8aA1apvK2m\\ngqpbw6jVUQKBgE2OKfjfyzMOEzqn+b5nlqZRWwGDLNE5JpbTmbC7DMEL6sWzFJoI\\n3DvHzvVnKU9pTEcGk6aPv5FVzZSZtUD9UQsBBE8uclIfVCtQzR6wi3ORQ8diU8jj\\n/t3CnljCuQKa6hkUpHpg6IPcNAVkFW8+DdNQRP7i6jCFWFdl034HaMlBAoGBAIbP\\naNlNnaxiFAbTzuB2MpDKwnp/8kQiP6fZ6c8LRWt+wdU1sl9bherVRUbLU3MGGuHG\\nvrePMCy8Q/FilTuEU65TTXmBW4s9SCwNEhJPHcyvvEK7+1hw7m/g3wmvzEj0SqmA\\nJVPnth00iQtW6nc/bwhjsJLmDlx54BQwQSUER2CRAoGAfSZyduoZjY3dd1cxqfv2\\n2/SF31V5J0GKTTqrceid5cCt1Pi5VGAqgvCfw6eNbQIUzODFELgyYvQ9tqpsztcM\\nLll5lzzwpOlrubVlAvYMM5B+DPEfz+2hGZxEeho5Ivmm99/yblx+SGoJPYS32cgc\\nlLqhVnfenykqQVNBVG5YHvU=\\n-----END PRIVATE KEY-----\\n\",\"clientEmail\":\"firebase-adminsdk-3ue1q@mamamia-test.iam.gserviceaccount.com\",\"httpClient\":{\"retry\":{\"maxRetries\":4,\"statusCodes\":[503],\"ioErrorCodes\":[\"ECONNRESET\",\"ETIMEDOUT\"],\"backOffFactor\":0.5,\"maxDelayInMillis\":60000}}}}"}}
+[debug] [2022-12-07T23:26:22.462Z] [runtime-status] [87269] Functions runtime initialized. {"cwd":"/Users/drwho/mamamia-challenge/functions","node_version":"16.13.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87269] Functions runtime initialized. {\"cwd\":\"/Users/drwho/mamamia-challenge/functions\",\"node_version\":\"16.13.0\"}"}}
+[debug] [2022-12-07T23:26:22.463Z] [runtime-status] [87269] Listening to port: /var/folders/rq/t6njs5x9687ctfxjnvgzd22c0000gn/T/fire_emu_dc1712e68d272f91.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [87269] Listening to port: /var/folders/rq/t6njs5x9687ctfxjnvgzd22c0000gn/T/fire_emu_dc1712e68d272f91.sock"}}
+[debug] [2022-12-07T23:26:22.530Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE"}}
+[debug] [2022-12-07T23:26:22.531Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-07T23:26:22.531Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[info] >  1670453419739 {"user":1670453419739,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m 1670453419739"}}
+[debug] [2022-12-07T23:26:24.613Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE"}}
+[debug] [2022-12-07T23:26:24.614Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 2073.345156ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 2073.345156ms"}}
+[debug] [2022-12-07T23:26:49.178Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-07T23:26:49.178Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-07T23:26:49.178Z] Accepted request DELETE /mamamia-test/us-central1/app/api/delete/1670455527999 --> us-central1-app
+[debug] [2022-12-07T23:26:49.181Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-07T23:26:49.181Z] [functions] Got req.url=/mamamia-test/us-central1/app/api/delete/1670455527999, mapping to path=/api/delete/1670455527999 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mamamia-test/us-central1/app/api/delete/1670455527999, mapping to path=/api/delete/1670455527999"}}
+[debug] [2022-12-07T23:26:49.181Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-07T23:26:49.181Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[info] >  1670455527999 {"user":1670455527999,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m 1670455527999"}}
+[debug] [2022-12-07T23:26:49.582Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE"}}
+[debug] [2022-12-07T23:26:49.582Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 398.288086ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 398.288086ms"}}
+[debug] [2022-12-07T23:30:38.651Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-07T23:30:38.653Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-07T23:30:38.653Z] Accepted request OPTIONS /mamamia-test/us-central1/app/api/create --> us-central1-app
+[debug] [2022-12-07T23:30:38.664Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-07T23:30:38.665Z] [functions] Got req.url=/mamamia-test/us-central1/app/api/create, mapping to path=/api/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mamamia-test/us-central1/app/api/create, mapping to path=/api/create"}}
+[debug] [2022-12-07T23:30:38.665Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-07T23:30:38.665Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-07T23:30:38.682Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE"}}
+[debug] [2022-12-07T23:30:38.682Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 3.289687ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 3.289687ms"}}
+[debug] [2022-12-07T23:30:38.685Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-07T23:30:38.686Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-07T23:30:38.686Z] Accepted request POST /mamamia-test/us-central1/app/api/create --> us-central1-app
+[debug] [2022-12-07T23:30:38.689Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-07T23:30:38.689Z] [functions] Got req.url=/mamamia-test/us-central1/app/api/create, mapping to path=/api/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mamamia-test/us-central1/app/api/create, mapping to path=/api/create"}}
+[debug] [2022-12-07T23:30:38.690Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-07T23:30:38.690Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-07T23:30:39.402Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE"}}
+[debug] [2022-12-07T23:30:39.402Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 658.098038ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 658.098038ms"}}
+[debug] [2022-12-07T23:36:51.023Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-07T23:36:51.025Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-07T23:36:51.026Z] Accepted request OPTIONS /mamamia-test/us-central1/app/api/create --> us-central1-app
+[debug] [2022-12-07T23:36:51.039Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-07T23:36:51.039Z] [functions] Got req.url=/mamamia-test/us-central1/app/api/create, mapping to path=/api/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mamamia-test/us-central1/app/api/create, mapping to path=/api/create"}}
+[debug] [2022-12-07T23:36:51.040Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-07T23:36:51.040Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[info] i  functions: Finished "app" in 1.667742ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 1.667742ms"}}
+[debug] [2022-12-07T23:36:51.050Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE"}}
+[debug] [2022-12-07T23:36:51.050Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-07T23:36:51.052Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-07T23:36:51.052Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-07T23:36:51.052Z] Accepted request POST /mamamia-test/us-central1/app/api/create --> us-central1-app
+[debug] [2022-12-07T23:36:51.055Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-07T23:36:51.055Z] [functions] Got req.url=/mamamia-test/us-central1/app/api/create, mapping to path=/api/create {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mamamia-test/us-central1/app/api/create, mapping to path=/api/create"}}
+[debug] [2022-12-07T23:36:51.056Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-07T23:36:51.056Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-07T23:36:52.715Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE"}}
+[debug] [2022-12-07T23:36:52.715Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 1649.485452ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 1649.485452ms"}}
+[debug] [2022-12-07T23:49:34.194Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-07T23:49:34.196Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-07T23:49:34.196Z] Accepted request OPTIONS /mamamia-test/us-central1/app/api/delete/1670456211059 --> us-central1-app
+[debug] [2022-12-07T23:49:34.213Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-07T23:49:34.213Z] [functions] Got req.url=/mamamia-test/us-central1/app/api/delete/1670456211059, mapping to path=/api/delete/1670456211059 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mamamia-test/us-central1/app/api/delete/1670456211059, mapping to path=/api/delete/1670456211059"}}
+[debug] [2022-12-07T23:49:34.213Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-07T23:49:34.214Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-07T23:49:34.226Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE"}}
+[debug] [2022-12-07T23:49:34.226Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 3.167926ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 3.167926ms"}}
+[debug] [2022-12-07T23:49:34.227Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-07T23:49:34.227Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-07T23:49:34.227Z] Accepted request DELETE /mamamia-test/us-central1/app/api/delete/1670456211059 --> us-central1-app
+[debug] [2022-12-07T23:49:34.230Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-07T23:49:34.230Z] [functions] Got req.url=/mamamia-test/us-central1/app/api/delete/1670456211059, mapping to path=/api/delete/1670456211059 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mamamia-test/us-central1/app/api/delete/1670456211059, mapping to path=/api/delete/1670456211059"}}
+[debug] [2022-12-07T23:49:34.230Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-07T23:49:34.230Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[info] >  1670456211059 {"user":1670456211059,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m 1670456211059"}}
+[debug] [2022-12-07T23:49:35.690Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE"}}
+[debug] [2022-12-07T23:49:35.690Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 1456.360584ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 1456.360584ms"}}
+[debug] [2022-12-07T23:49:38.153Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-07T23:49:38.154Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-07T23:49:38.154Z] Accepted request OPTIONS /mamamia-test/us-central1/app/api/delete/1670455838731 --> us-central1-app
+[debug] [2022-12-07T23:49:38.157Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-07T23:49:38.158Z] [functions] Got req.url=/mamamia-test/us-central1/app/api/delete/1670455838731, mapping to path=/api/delete/1670455838731 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mamamia-test/us-central1/app/api/delete/1670455838731, mapping to path=/api/delete/1670455838731"}}
+[debug] [2022-12-07T23:49:38.158Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-07T23:49:38.158Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-07T23:49:38.160Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE"}}
+[debug] [2022-12-07T23:49:38.160Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 0.620615ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 0.620615ms"}}
+[debug] [2022-12-07T23:49:38.162Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-07T23:49:38.162Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-07T23:49:38.163Z] Accepted request DELETE /mamamia-test/us-central1/app/api/delete/1670455838731 --> us-central1-app
+[debug] [2022-12-07T23:49:38.169Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-07T23:49:38.169Z] [functions] Got req.url=/mamamia-test/us-central1/app/api/delete/1670455838731, mapping to path=/api/delete/1670455838731 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mamamia-test/us-central1/app/api/delete/1670455838731, mapping to path=/api/delete/1670455838731"}}
+[debug] [2022-12-07T23:49:38.169Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-07T23:49:38.169Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[info] >  1670455838731 {"user":1670455838731,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m 1670455838731"}}
+[debug] [2022-12-07T23:49:38.465Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE"}}
+[debug] [2022-12-07T23:49:38.465Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 291.455207ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 291.455207ms"}}
+[debug] [2022-12-08T00:04:29.426Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T00:04:29.428Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T00:04:29.429Z] Accepted request OPTIONS /mamamia-test/us-central1/app/api/delete/1670455444966 --> us-central1-app
+[debug] [2022-12-08T00:04:29.441Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T00:04:29.442Z] [functions] Got req.url=/mamamia-test/us-central1/app/api/delete/1670455444966, mapping to path=/api/delete/1670455444966 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mamamia-test/us-central1/app/api/delete/1670455444966, mapping to path=/api/delete/1670455444966"}}
+[debug] [2022-12-08T00:04:29.444Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-08T00:04:29.444Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-12-08T00:04:29.459Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE"}}
+[debug] [2022-12-08T00:04:29.460Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 3.62584ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 3.62584ms"}}
+[debug] [2022-12-08T00:04:29.460Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-08T00:04:29.460Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-08T00:04:29.468Z] Accepted request DELETE /mamamia-test/us-central1/app/api/delete/1670455444966 --> us-central1-app
+[debug] [2022-12-08T00:04:29.476Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-08T00:04:29.476Z] [functions] Got req.url=/mamamia-test/us-central1/app/api/delete/1670455444966, mapping to path=/api/delete/1670455444966 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mamamia-test/us-central1/app/api/delete/1670455444966, mapping to path=/api/delete/1670455444966"}}
+[debug] [2022-12-08T00:04:29.476Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[debug] [2022-12-08T00:04:29.477Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: BUSY"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[info] >  1670455444966 {"user":1670455444966,"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"\u001b[90m> \u001b[39m 1670455444966"}}
+[debug] [2022-12-08T00:04:30.908Z] [worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-app-aa3ffb26-9de6-497c-b472-f34f19ab0dc4]: IDLE"}}
+[debug] [2022-12-08T00:04:30.908Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "app" in 1423.267272ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"app\" in 1423.267272ms"}}
